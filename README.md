@@ -33,7 +33,7 @@ The variance for the whole production does in fact comply with the specification
 
 ## T-Tests on Suspension Coils
 
-
+The summary of the T-Test is as follows: The mean of the entire table is not statistically different from the ideal mean of 1500, this is demonstrated by the first screenshot and the p-value of 0.06. However once each lot is analyzed separately we can see a few interesting results. Lots 1 and 2 follow the same trend as the general table, in fact the mean of Lot 1 is exactly 1500, hence the p-value of 1. In the case of Lot 3 there is a 95% confidence interval of the mean being between 1492 and 1499, and the p-value is equals to 0.41, which means it is statistically more likely that the difference in means is not random.
 
 ![All lots](All_lots.png)
 
@@ -53,29 +53,27 @@ The variance for the whole production does in fact comply with the specification
 
 - What metric or metrics are you going to test?
 
-price, fuel efficiency, average lifespan 
+ fuel efficiency vs life of the vehicle
 
 
 - What is the null hypothesis or alternative hypothesis?
 
-Null hypothesis: there is no statistical difference between the two vehicles
 
-Altertavie hypothesis: There is a difference
+
+
+Null: There is no relationship between the two variables
+
+Alternative: There is a relationship
 
 
 - What statistical test would you use to test the hypothesis? And why?
 
-price: I would use ANOVA to compare the average price of different vehicles as categories because 
+Linear regression, because I want to see if the independant variable (life of the vehicle) has any effect on the dependant variable (fuel efficiency), and if it does I want to be able to predict it.
 
-
-fuel efficiency:
-
-
-average lifespan:
 
 
 - What data is needed to run the statistical test?
 
-average price, 
+Fuel efficiency of several of the MechaCars paired with how much time they have been in service. 
 
 
